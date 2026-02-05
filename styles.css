@@ -118,7 +118,6 @@ header {
     font-family: 'Pacifico', cursive;
     font-size: 1.8rem;
     color: var(--pink-dark);
-    font-weight: 600;
 }
 
 .nav-links {
@@ -485,5 +484,22 @@ footer {
     
     .section-title {
         font-size: 1.8rem;
+    }
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .floating-hearts .heart,
+    .flower,
+    .star,
+    .hero-content {
+        animation: none;
+    }
+    
+    .cta-button:hover,
+    .about-card:hover,
+    .feature-item:hover,
+    .social-button:hover {
+        transform: none;
     }
 }
